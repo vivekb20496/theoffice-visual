@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 
-from home import df_exploded
+from Home import df_exploded
 
 st.title("Q2. Most Number Of Lines By Characters" )
 
