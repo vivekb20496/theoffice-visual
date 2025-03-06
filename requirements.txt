@@ -1,5 +1,10 @@
+matplotlib
 streamlit
+numpy==1.23.5
 pandas
-re
+xmltodict
+urllib3
+seaborn>=0.11.0
+streamlit-lottie
 plotly
-
+streamlit-extras>=0.2.4
