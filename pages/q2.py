@@ -4,6 +4,8 @@ import pandas as pd
 
 from home import df_exploded
 
+st.title("Q2. Most Number Of Lines By Characters" )
+
 count_lines = df_exploded.groupby(['season', 'episode', 'unique_speakers']).size().reset_index(name='count')
 count_lines = count_lines.sort_values(by=['season', 'episode', 'count'], ascending=[True, True, False])
 
