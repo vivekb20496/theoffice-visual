@@ -3,7 +3,7 @@ import plotly.express as px
 import pandas as pd
 import re
 from collections import Counter
-from home import df_exploded
+from Home import df_exploded
 
 # Title
 st.title("Question 4. Most Common Word Per Character Analysis")
