@@ -1,0 +1,8 @@
+streamlit
+pandas
+re
+plotly
+time
+subprocess
+Ipython
+ipywidgets
