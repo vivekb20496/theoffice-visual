@@ -34,7 +34,3 @@ df["unique_speakers"] = df["unique_speakers"].str.split(", ")
 df_exploded = df.explode("unique_speakers", ignore_index=True)
 
 st.dataframe(df_exploded)
-
-)
-
-st.plotly_chart(fig)
