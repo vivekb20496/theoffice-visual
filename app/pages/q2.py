@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 
-from main_app import df_exploded
+from home import df_exploded
 
 count_lines = df_exploded.groupby(['season', 'episode', 'unique_speakers']).size().reset_index(name='count')
 count_lines = count_lines.sort_values(by=['season', 'episode', 'count'], ascending=[True, True, False])
