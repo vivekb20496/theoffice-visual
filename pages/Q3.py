@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 
-from home import df_exploded
+from Home import df_exploded
 
 
 df_exploded["word_count"] = df_exploded["line"].apply(lambda x: len(str(x).split()))
