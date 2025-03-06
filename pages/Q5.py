@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.express as px
 import pandas as pd
 
-from home import df_exploded
+from Home import df_exploded
 
 # Title
 st.title("Question 5. Most Common Word Per Character Analysis")
