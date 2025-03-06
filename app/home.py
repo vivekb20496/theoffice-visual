@@ -6,8 +6,12 @@ import plotly.graph_objects as go
 from plotly._subplots import make_subplots
 import plotly.express as px
 
+@st.cache_data
+def load_data():
+    df = pd.read_csv('The-Office-Lines-V4.csv')
+    return df
 
-df = pd.read_csv('The-Office-Lines-V4.csv')
+df = load_data() 
 
 df = df.drop(columns=['Unnamed: 6'])
 
@@ -29,7 +33,7 @@ df["unique_speakers"] = df["unique_speakers"].str.split(", ")
 
 df_exploded = df.explode("unique_speakers", ignore_index=True)
 
-
+st.dataframe(df_exploded)
 
 )
 
