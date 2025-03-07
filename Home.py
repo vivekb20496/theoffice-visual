@@ -6,6 +6,8 @@ import plotly.graph_objects as go
 from plotly._subplots import make_subplots
 import plotly.express as px
 
+st.title("The Office Data Analysis")
+
 @st.cache_data
 def load_data():
     df = pd.read_csv('The-Office-Lines-V4.csv')
@@ -32,5 +34,7 @@ df["unique_speakers"] = df["unique_speakers"].str.split(", ")
 
 
 df_exploded = df.explode("unique_speakers", ignore_index=True)
+
+st.text("Cleaned Raw Data Post EDA")
 
 st.dataframe(df_exploded)
